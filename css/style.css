@@ -1,27 +1,51 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
+    font-family: Arial, sans-serif; /* Default font for now */
+    background-color: #F5F5F5; /* Light gray background (like a stadium exterior) */
+    color: #333333; /* Dark gray text */
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Spacing between lines */
 }
 
-/* Header */
+/* Header (Arsenal-themed) */
 header {
-    background-color: #EF0107; /* Arsenal red */
-    color: white;
+    background: linear-gradient(135deg, #EF0107, #B30000); /* Arsenal red gradient */
+    color: #FFFFFF; /* White text */
     text-align: center;
-    padding: 20px;
+    padding: 30px 10px;
 }
 
-/* Navigation Menu */
+header h1 {
+    font-size: 2.5rem; /* Large header text */
+    margin: 0;
+    font-weight: bold; /* Bold for emphasis */
+    letter-spacing: 2px; /* Soccer-inspired spacing */
+}
+
+header p {
+    font-size: 1.2rem; /* Smaller subheading */
+    margin: 5px 0 0;
+    font-style: italic; /* Italicized for a dynamic feel */
+}
+
+/* Navigation Menu (Striped like a soccer jersey) */
+nav {
+    background: repeating-linear-gradient(
+        45deg,
+        #EF0107,
+        #EF0107 10px,
+        #FFFFFF 10px,
+        #FFFFFF 20px
+    ); /* Diagonal red-and-white stripes */
+    padding: 10px 0;
+}
+
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove bullet points */
     padding: 0;
     display: flex;
-    justify-content: center;
-    background-color: #ccc;
+    justify-content: center; /* Center-align menu items */
     margin: 0;
 }
 
@@ -31,20 +55,87 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #FFFFFF; /* White text on stripes */
     font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase; /* All caps for a sporty look */
+    letter-spacing: 1px; /* Soccer-inspired spacing */
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
-/* Content Container */
+nav ul li a:hover {
+    color: #FFD700; /* Gold text on hover (like a trophy!) */
+}
+
+/* Content Container (Clean and focused) */
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    line-height: 1.6;
+    background-color: #FFFFFF; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Images */
+.container h2 {
+    color: #EF0107; /* Arsenal red headings */
+    font-size: 2rem;
+    margin-top: 0;
+    font-weight: bold;
+    text-transform: uppercase; /* All caps for emphasis */
+    letter-spacing: 1px; /* Soccer-inspired spacing */
+}
+
+.container p {
+    font-size: 1rem;
+    color: #333333; /* Dark gray text */
+    margin-bottom: 15px;
+}
+
+/* Images (Soccer-inspired styling) */
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 0;
+    border: 2px solid #EF0107; /* Red border around images */
+}
+
+/* Buttons (Call-to-action buttons) */
+button, .donate-button {
+    display: inline-block;
+    background-color: #EF0107; /* Arsenal red */
+    color: #FFFFFF; /* White text */
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    text-transform: uppercase; /* All caps for emphasis */
+    letter-spacing: 1px; /* Soccer-inspired spacing */
+}
+
+button:hover, .donate-button:hover {
+    background-color: #B30000; /* Darker red on hover */
+}
+
+/* Footer (Arsenal-themed) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #EF0107; /* Arsenal red */
+    color: #FFFFFF; /* White text */
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #FFFFFF; /* White links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer a:hover {
+    color: #FFD700; /* Gold text on hover */
 }
