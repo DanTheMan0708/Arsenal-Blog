@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #EF0107; /* Arsenal red */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Content Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
