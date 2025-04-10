@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif; /* Default font for now */
-    background-color: #F5F5F5; /* Light gray background (like a stadium exterior) */
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF; /* White background for the main content */
     color: #333333; /* Dark gray text */
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Spacing between lines */
+    line-height: 1.6;
 }
 
 /* Header (Arsenal-themed) */
@@ -67,7 +67,7 @@ nav ul li a:hover {
     color: #FFD700; /* Gold text on hover (like a trophy!) */
 }
 
-/* Content Container (Clean and focused) */
+/* Content Container */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -92,7 +92,7 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
-/* Images (Soccer-inspired styling) */
+/* Images */
 img {
     max-width: 100%;
     height: auto;
@@ -101,7 +101,7 @@ img {
     border: 2px solid #EF0107; /* Red border around images */
 }
 
-/* Buttons (Call-to-action buttons) */
+/* Buttons */
 button, .donate-button {
     display: inline-block;
     background-color: #EF0107; /* Arsenal red */
