@@ -29,6 +29,24 @@ header p {
     font-style: italic; /* Italicized for a dynamic feel */
 }
 
+/* Hero Section (Clean Arsenal red background) */
+.hero {
+    background-color: #EF0107; /* Solid Arsenal red */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin: 10px 0 0;
+}
+
 /* Navigation Menu (Solid Arsenal red) */
 nav {
     background-color: #EF0107; /* Solid Arsenal red */
@@ -59,30 +77,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #FFD700; /* Gold text on hover (like a trophy!) */
-}
-
-/* Hero Section (Optional - Diagonal stripes moved here) */
-.hero {
-    background: repeating-linear-gradient(
-        45deg,
-        #EF0107,
-        #EF0107 10px,
-        #FFFFFF 10px,
-        #FFFFFF 20px
-    ); /* Diagonal red-and-white stripes */
-    color: #FFFFFF; /* White text */
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.hero h2 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1rem;
-    margin: 10px 0 0;
 }
 
 /* Content Container */
@@ -138,15 +132,9 @@ button:hover, .donate-button:hover {
     background-color: #B30000; /* Darker red on hover */
 }
 
-/* Footer (Diagonal stripes moved here) */
+/* Footer (Solid Arsenal red) */
 footer {
-    background: repeating-linear-gradient(
-        45deg,
-        #EF0107,
-        #EF0107 10px,
-        #FFFFFF 10px,
-        #FFFFFF 20px
-    ); /* Diagonal red-and-white stripes */
+    background-color: #EF0107; /* Solid Arsenal red */
     text-align: center;
     padding: 20px;
     color: #FFFFFF; /* White text */
@@ -160,6 +148,9 @@ footer a {
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 
+footer a:hover {
+    color: #FFD700; /* Gold text on hover */
+}
 footer a:hover {
     color: #FFD700; /* Gold text on hover */
 }
