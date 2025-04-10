@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF; /* White background for the main content */
+    background-color: #FFFFFF; /* White background */
     color: #333333; /* Dark gray text */
     margin: 0;
     padding: 0;
@@ -150,28 +150,4 @@ footer a {
 
 footer a:hover {
     color: #FFD700; /* Gold text on hover */
-}
-footer a:hover {
-    color: #FFD700; /* Gold text on hover */
-}
-/* Discord Button Styling */
-.social-links {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.social-links a {
-    display: inline-block;
-    background-color: #5865F2; /* Discord's official blue color */
-    color: #FFFFFF; /* White text */
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.social-links a:hover {
-    background-color: #4752C4; /* Darker blue on hover */
 }
