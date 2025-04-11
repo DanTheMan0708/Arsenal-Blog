@@ -151,3 +151,32 @@ footer a {
 footer a:hover {
     color: #FFD700; /* Gold text on hover */
 }
+/* Smooth Transitions for Links */
+a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #FFD700; /* Gold on hover */
+    transform: scale(1.05); /* Slightly grow */
+}
+
+/* Button Hover Effects */
+button, .donate-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .donate-button:hover {
+    background-color: #B30000; /* Darker red */
+    transform: scale(1.05); /* Slightly grow */
+}
+
+/* Image Hover Effects */
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly zoom in */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
