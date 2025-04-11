@@ -180,3 +180,21 @@ img:hover {
     transform: scale(1.05); /* Slightly zoom in */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #FFFFFF; /* White icons */
+    font-size: 1.5rem; /* Larger icons */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FFD700; /* Gold on hover */
+    transform: scale(1.2); /* Slightly grow */
+}
