@@ -198,3 +198,43 @@ img:hover {
     color: #FFD700; /* Gold on hover */
     transform: scale(1.2); /* Slightly grow */
 }
+/* Player Grid */
+.player-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into multiple rows */
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 20px; /* Space between player cards */
+    padding: 20px;
+}
+
+/* Individual Player Card */
+.player-card {
+    width: calc(50% - 20px); /* Two cards per row with spacing */
+    text-align: center;
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #EF0107; /* Arsenal red border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+    transform: scale(1.05); /* Slightly grow on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Player Images */
+.player-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners for the image */
+    margin-bottom: 10px;
+}
+
+/* Player Names */
+.player-card h3 {
+    font-size: 1.2rem;
+    color: #EF0107; /* Arsenal red text */
+    margin: 0;
+    padding: 10px;
+}
