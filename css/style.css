@@ -285,3 +285,30 @@ footer {
     color: white;
     margin-top: 2rem;
 }
+.player-category {
+    margin-bottom: 2rem;
+}
+
+.player-category h2 {
+    color: #d1001c; /* Arsenal red */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.player-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.player-card {
+    width: 150px;
+    text-align: center;
+}
+
+.player-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
