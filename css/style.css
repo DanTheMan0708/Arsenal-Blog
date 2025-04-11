@@ -320,3 +320,124 @@ footer {
     width: 100%;
     height: auto;
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Header Styling */
+header {
+    background-color: #d1001c; /* Arsenal red */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #1b1b1b;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d1001c; /* Arsenal red on hover */
+}
+
+/* Player Grid Layout */
+.player-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between cards */
+    justify-content: center; /* Center-align the cards */
+    margin-top: 1rem;
+}
+
+/* Individual Player Card */
+.player-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px; /* Adjust as needed */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Player Card Image */
+.player-card img {
+    width: 100%; /* Make the image fill the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .player-card {
+        width: 150px; /* Smaller width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .player-grid {
+        flex-direction: column; /* Stack cards vertically on very small screens */
+        align-items: center;
+    }
+    .player-card {
+        width: 90%; /* Make cards take up most of the screen width */
+    }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1b1b1b;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #d1001c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
