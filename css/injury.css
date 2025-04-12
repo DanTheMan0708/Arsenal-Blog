@@ -1,30 +1,54 @@
-/* General Styling for Injury Updates */
-.injury-updates ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-}
-
-.injury-updates li {
-    margin-bottom: 1rem;
-    font-size: 1rem;
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 1rem;
 }
 
-.player-injury-image {
-    width: 50px;
-    height: auto;
+header, footer {
+    text-align: center;
+    background-color: #d1001c; /* Arsenal red */
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    background-color: #1b1b1b;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.filter-buttons button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
     border-radius: 8px;
-    margin-left: 1rem;
-    vertical-align: middle;
+    background-color: #d1001c; /* Arsenal red */
+    color: white;
+    cursor: pointer;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
-    .player-injury-image {
-        width: 75px;
-    }
+.filter-buttons button:hover {
+    background-color: #a80017; /* Darker red on hover */
 }
-/* General Styling for Injury Updates */
+
 .injury-updates ul {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -41,6 +65,8 @@
 .injury-updates img {
     display: block;
     margin-top: 0.5rem;
+    width: 300px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
 }
 
