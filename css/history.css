@@ -1,0 +1,50 @@
+/* Timeline Styling */
+.timeline {
+    margin-top: 2rem;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.timeline-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.timeline-item iframe {
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .timeline-item {
+        text-align: left;
+    }
+
+    .timeline-item img {
+        float: right;
+        margin-left: 1rem;
+    }
+}
