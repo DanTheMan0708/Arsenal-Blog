@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Daniël Schreuder">
     <title>Injury Updates - My Arsenal Blog</title>
-    <!-- General Styles -->
     <link rel="stylesheet" href="../css/style.css">
-    <!-- Injury-Specific Styles -->
     <link rel="stylesheet" href="../css/injury.css">
 </head>
 <body>
@@ -17,41 +15,20 @@
     </header>
 
     <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="player-profiles.html">Player Profiles</a></li>
-            <li><a href="match-analysis.html">Match Analysis</a></li>
-            <li><a href="arsenal-history.html">Arsenal History</a></li>
-        </ul>
-    </nav>
+    <div id="nav-placeholder"></div>
+
+    <!-- Buttons for Filtering by Position -->
+    <div class="filter-buttons">
+        <button onclick="filterInjuries('all')">All</button>
+        <button onclick="filterInjuries('Forward')">Forwards</button>
+        <button onclick="filterInjuries('Midfielder')">Midfielders</button>
+        <button onclick="filterInjuries('Defender')">Defenders</button>
+    </div>
 
     <!-- Main Content -->
     <main>
-        <section class="injury-updates">
-            <h2>Current Injuries</h2>
-            <ul>
-                <li>
-                    <strong>Bukayo Saka:</strong> Hamstring injury, expected return in 2 weeks.
-                    <img src="../images/bukayo-saka.jpg" alt="Bukayo Saka" class="player-injury-image" width="300" height="auto">
-                </li>
-                <li>
-                    <strong>William Saliba:</strong> Ankle sprain, out for 1 month.
-                    <img src="../images/william-saliba.jpg" alt="William Saliba" class="player-injury-image" width="300" height="auto">
-                </li>
-                <li>
-                    <strong>Thomas Partey:</strong> Recovering from surgery, no ETA yet.
-                    <img src="../images/thomas-partey.jpg" alt="Thomas Partey" class="player-injury-image" width="300" height="auto">
-                </li>
-                <li>
-                    <strong>Gabriel Jesus:</strong> Knee injury, expected to return in 3 weeks.
-                    <img src="../images/gabriel-jesus.jpg" alt="Gabriel Jesus" class="player-injury-image" width="300" height="auto">
-                </li>
-                <li>
-                    <strong>Kieran Tierney:</strong> Groin strain, expected return in 1 week.
-                    <img src="../images/kieran-tierney.jpg" alt="Kieran Tierney" class="player-injury-image" width="300" height="auto">
-                </li>
-            </ul>
+        <section class="injury-updates" id="injury-list">
+            <!-- Injuries will be dynamically loaded here -->
         </section>
     </main>
 
@@ -61,6 +38,83 @@
         <div class="social-links">
             <a href="https://discord.gg/YourDiscordInviteCode" target="_blank"><i class="fab fa-discord"></i></a>
         </div>
+    </footer>
+
+    <!-- Include Navigation via JavaScript -->
+    <script>
+        // Load navigation menu
+        fetch('../components/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- Fetch Injury Data -->
+    <script>
+        const injuryList = document.getElementById('injury-list');
+
+        // Function to load injuries from JSON
+        async function loadInjuries() {
+            try {
+                const response = await fetch('../data/injuries.json'); // Path to JSON file
+                const injuries = await response.json();
+                displayInjuries(injuries);
+            } catch (error) {
+                console.error('Error loading injury data:', error);
+            }
+        }
+
+        // Function to display injuries
+        function displayInjuries(injuries) {
+            injuryList.innerHTML = ''; // Clear previous content
+            injuries.forEach(injury => {
+                const statusClass = getStatusClass(injury.status); // Get CSS class based on status
+                const listItem = `
+                    <li class="${statusClass}">
+                        <strong>${injury.name}</strong> (${injury.position}): ${injury.injury}.
+                        Expected return: ${injury.returnDate}.
+                        <img src="../images/${injury.name.toLowerCase().replace(' ', '-')}.jpg" 
+                             alt="${injury.name}" 
+                             width="300" 
+                             height="auto">
+                    </li>
+                `;
+                injuryList.insertAdjacentHTML('beforeend', listItem);
+            });
+        }
+
+        // Function to filter injuries by position
+        function filterInjuries(position) {
+            fetch('../data/injuries.json')
+                .then(response => response.json())
+                .then(injuries => {
+                    const filtered = position === 'all'
+                        ? injuries
+                        : injuries.filter(injury => injury.position === position);
+                    displayInjuries(filtered);
+                });
+        }
+
+        // Helper function to determine CSS class based on injury status
+        function getStatusClass(status) {
+            switch (status) {
+                case 'short-term':
+                    return 'short-term';
+                case 'medium-term':
+                    return 'medium-term';
+                case 'long-term':
+                    return 'long-term';
+                default:
+                    return '';
+            }
+        }
+
+        // Load injuries on page load
+        window.onload = () => loadInjuries();
+    </script>
+</body>
+</html>
     </footer>
 </body>
 </html>
