@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Bukayo Saka",
+        "position": "Forward",
+        "injury": "Hamstring injury",
+        "status": "short-term",
+        "returnDate": "2 weeks"
+    },
+    {
+        "name": "William Saliba",
+        "position": "Defender",
+        "injury": "Ankle sprain",
+        "status": "medium-term",
+        "returnDate": "1 month"
+    },
+    {
+        "name": "Thomas Partey",
+        "position": "Midfielder",
+        "injury": "Recovering from surgery",
+        "status": "long-term",
+        "returnDate": "TBD"
+    },
+    {
+        "name": "Gabriel Jesus",
+        "position": "Forward",
+        "injury": "Knee injury",
+        "status": "short-term",
+        "returnDate": "3 weeks"
+    },
+    {
+        "name": "Kieran Tierney",
+        "position": "Defender",
+        "injury": "Groin strain",
+        "status": "short-term",
+        "returnDate": "1 week"
+    }
+]
