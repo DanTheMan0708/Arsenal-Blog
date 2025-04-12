@@ -448,36 +448,6 @@ footer a:hover {
     box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 1rem;
-}
-
-header, footer {
-    text-align: center;
-    background-color: #d1001c; /* Arsenal red */
-    color: white;
-    padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0.5rem 0;
-    background-color: #1b1b1b;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 /* Timeline Styling */
 .timeline {
