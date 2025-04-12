@@ -441,4 +441,91 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 1rem;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #d1001c; /* Arsenal red */
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    background-color: #1b1b1b;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Timeline Styling */
+.timeline {
+    margin-top: 2rem;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.timeline-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.timeline-item iframe {
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .timeline-item {
+        text-align: left;
+    }
+
+    .timeline-item img {
+        float: right;
+        margin-left: 1rem;
+    }
+}
+.timeline-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
