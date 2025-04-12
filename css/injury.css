@@ -1,0 +1,26 @@
+/* General Styling for Injury Updates */
+.injury-updates ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.injury-updates li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.player-injury-image {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 1rem;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .player-injury-image {
+        width: 75px;
+    }
+}
