@@ -24,3 +24,38 @@
         width: 75px;
     }
 }
+/* General Styling for Injury Updates */
+.injury-updates ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.injury-updates li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.injury-updates img {
+    display: block;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+}
+
+/* Color-Coded Status */
+.short-term {
+    background-color: #fff3cd; /* Yellow for short-term */
+    color: #856404;
+}
+
+.medium-term {
+    background-color: #fff9db; /* Light orange for medium-term */
+    color: #664d03;
+}
+
+.long-term {
+    background-color: #f8d7da; /* Red for long-term */
+    color: #721c24;
+}
