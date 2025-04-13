@@ -1,0 +1,218 @@
+[
+    {
+        "name": "Bukayo Saka",
+        "stats": {
+            "goals": 10,
+            "assists": 5,
+            "appearances": 25
+        }
+    },
+    {
+        "name": "Martin Ødegaard",
+        "stats": {
+            "goals": 8,
+            "assists": 12,
+            "appearances": 32
+        }
+    },
+    {
+        "name": "Gabriel Jesus",
+        "stats": {
+            "goals": 15,
+            "assists": 7,
+            "appearances": 28
+        }
+    },
+    {
+        "name": "William Saliba",
+        "stats": {
+            "goals": 2,
+            "assists": 1,
+            "appearances": 26
+        }
+    },
+    {
+        "name": "David Raya",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 25
+        }
+    },
+    {
+        "name": "Declan Rice",
+        "stats": {
+            "goals": 3,
+            "assists": 4,
+            "appearances": 30
+        }
+    },
+    {
+        "name": "Kai Havertz",
+        "stats": {
+            "goals": 7,
+            "assists": 6,
+            "appearances": 29
+        }
+    },
+    {
+        "name": "Myles Lewis-Skelly",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 3
+        }
+    },
+    {
+        "name": "Riccardo Calafiori",
+        "stats": {
+            "goals": 1,
+            "assists": 2,
+            "appearances": 15
+        }
+    },
+    {
+        "name": "Gabriel Martinelli",
+        "stats": {
+            "goals": 12,
+            "assists": 5,
+            "appearances": 30
+        }
+    },
+    {
+        "name": "Ben White",
+        "stats": {
+            "goals": 1,
+            "assists": 2,
+            "appearances": 26
+        }
+    },
+    {
+        "name": "Jurrien Timber",
+        "stats": {
+            "goals": 2,
+            "assists": 0,
+            "appearances": 18
+        }
+    },
+    {
+        "name": "Jorginho",
+        "stats": {
+            "goals": 3,
+            "assists": 7,
+            "appearances": 29
+        }
+    },
+    {
+        "name": "Takehiro Tomiyasu",
+        "stats": {
+            "goals": 0,
+            "assists": 1,
+            "appearances": 20
+        }
+    },
+    {
+        "name": "Oleksandr Zinchenko",
+        "stats": {
+            "goals": 1,
+            "assists": 3,
+            "appearances": 22
+        }
+    },
+    {
+        "name": "Kieran Tierney",
+        "stats": {
+            "goals": 2,
+            "assists": 4,
+            "appearances": 24
+        }
+    },
+    {
+        "name": "Neto",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 10
+        }
+    },
+    {
+        "name": "Ismail Kabia",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 2
+        }
+    },
+    {
+        "name": "Nathan Butler-Oyedeji",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 1
+        }
+    },
+    {
+        "name": "Salah-Eddine Oulad M'Hand",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 1
+        }
+    },
+    {
+        "name": "Jakub Kiwior",
+        "stats": {
+            "goals": 1,
+            "assists": 0,
+            "appearances": 18
+        }
+    },
+    {
+        "name": "Jack Porter",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 5
+        }
+    },
+    {
+        "name": "Tommy Setford",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 3
+        }
+    },
+    {
+        "name": "Alexei Rojas",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 8
+        }
+    },
+    {
+        "name": "Jimi Gower",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 2
+        }
+    },
+    {
+        "name": "Thomas Partey",
+        "stats": {
+            "goals": 4,
+            "assists": 5,
+            "appearances": 27
+        }
+    },
+    {
+        "name": "Joshua Nichols",
+        "stats": {
+            "goals": 0,
+            "assists": 0,
+            "appearances": 1
+        }
+    }
+]
